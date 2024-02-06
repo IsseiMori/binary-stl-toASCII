@@ -2,12 +2,13 @@
 import struct
 import csv
 import sys
-cycle = len(sys.argv)
+cycle = len(sys.argv)-1
 if (cycle): 
    multipath = sys.argv
 else:
-    sys.close()
-print(cycle)
+    print("No files passed \n Syntax convertbatch.py Filename1 ...")
+    sys.exit()
+
 
 for loop in range(1,cycle):
     path= multipath[loop]
