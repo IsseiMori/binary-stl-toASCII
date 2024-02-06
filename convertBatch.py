@@ -10,8 +10,8 @@ else:
     sys.exit()
 
 
-for loop in range(1,cycle):
-    path= multipath[loop]
+for loop in range(0,cycle):
+    path= multipath[loop+1]
     infile = open(path, 'rb') #import file
     out = open(path + ' ASCII.stl', 'w') #export file
 
